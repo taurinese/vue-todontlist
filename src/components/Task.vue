@@ -99,4 +99,9 @@ export default {
 .icon-white {
   filter: brightness(0) invert(1);
 }
+.done{
+    font-style:italic;
+    text-decoration:line-through;
+    opacity:0.6;
+}
 </style>

@@ -4,7 +4,7 @@ import router from '../router'
 export const login = ({commit}, form) => {
     axios({
         method: 'post',
-        url: 'http://127.0.0.1:8000/api/auth/login',
+        url: 'https://laravel-todontlist.herokuapp.com/api/auth/login',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ export const login = ({commit}, form) => {
 export const register = ({commit}, form) => {
     axios({
         method: 'post',
-        url: 'http://127.0.0.1:8000/api/auth/register',
+        url: 'https://laravel-todontlist.herokuapp.com/api/auth/register',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -66,7 +66,7 @@ export const register = ({commit}, form) => {
 export  const tasks = ({getters, commit}) => {
     axios({
         method: 'get',
-        url: 'http://127.0.0.1:8000/api/tasks',
+        url: 'https://laravel-todontlist.herokuapp.com/api/tasks',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ export  const tasks = ({getters, commit}) => {
 /* export const task = ({getters, commit}, id) => {
     axios({
         method: 'get',
-        url: `http://127.0.0.1:8000/api/tasks/${id}`,
+        url: `https://laravel-todontlist.herokuapp.com/api/tasks/${id}`,
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
@@ -102,7 +102,7 @@ export  const tasks = ({getters, commit}) => {
 export const deleteTask = ({getters, commit}, id) => {
     axios({
         method: 'delete',
-        url: `http://127.0.0.1:8000/api/tasks/${id}`,
+        url: `https://laravel-todontlist.herokuapp.com/api/tasks/${id}`,
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
@@ -120,7 +120,7 @@ export const deleteTask = ({getters, commit}, id) => {
 export const addTask = ({getters, commit}, form) => {
     axios({
         method: 'post',
-        url: 'http://127.0.0.1:8000/api/tasks',
+        url: 'https://laravel-todontlist.herokuapp.com/api/tasks',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
@@ -142,7 +142,7 @@ export const addTask = ({getters, commit}, form) => {
 export const updateTask = ({getters, commit}, data) => {
     axios({
         method: 'put',
-        url: `http://127.0.0.1:8000/api/tasks/${data.id}`,
+        url: `https://laravel-todontlist.herokuapp.com/api/tasks/${data.id}`,
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
@@ -164,7 +164,7 @@ export const updateTask = ({getters, commit}, data) => {
 export const logout = ({getters, commit}) => {
     axios({
         method: 'post',
-        url: 'http://127.0.0.1:8000/api/auth/logout',
+        url: 'https://laravel-todontlist.herokuapp.com/api/auth/logout',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
